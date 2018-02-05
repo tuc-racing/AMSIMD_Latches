@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14199,7 +14199,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="IMD_BMS_LATCH" library="con-molex" deviceset="5566-10" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1812" value="500mA"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1A"/>
 <part name="IC1" library="v-reg" deviceset="78XX-TO3" device="" value="LM7805"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="140CLH-1010" value="0.33uF"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="140CLH-1010" value="100nF"/>
@@ -14222,7 +14222,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="rcl" deviceset="R-TRIMM" device="64Y" value="12K"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO-214AC"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="2.2K"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="Q2" library="transistor-small-signal" deviceset="BS170" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -14235,7 +14235,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="IC3" library="linear" deviceset="LM339" device="D"/>
 <part name="R9" library="rcl" deviceset="R-TRIMM" device="64Y" value="12K"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="DO-214AC"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="10K"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="2.2K"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="Q4" library="transistor-small-signal" deviceset="BS170" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -14247,15 +14247,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="Q6" library="transistor-small-signal" deviceset="BS170" device=""/>
 <part name="Q7" library="transistor-small-signal" deviceset="BS170" device=""/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="K1" library="relay" deviceset="4052" device=""/>
-<part name="D3" library="diode" deviceset="DIODE-" device="DO-214AC"/>
+<part name="D3" library="diode" deviceset="DIODE-" device="DO-214AC" value="1N4148"/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="215.9" y="20.32" size="1.778" layer="94">IMD and BMS Latching Board</text>
+<text x="162.56" y="17.78" size="1.778" layer="94">TUC Racing 2016
+Formula Student Italy</text>
+<text x="162.56" y="7.62" size="1.778" layer="94">Drawn by: Luis Suarez</text>
+<text x="162.56" y="5.08" size="1.778" layer="94">Reviewed by:</text>
+<text x="213.36" y="60.96" size="1.778" layer="97">Signal        Value      Status
+IMD_FAIL      1           Ok
+                    0          Fail
+BMS_FAIL      1           Ok
+                    0          Fail</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -14384,17 +14393,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </instance>
 <instance part="GND12" gate="1" x="142.24" y="15.24"/>
 <instance part="Q6" gate="1" x="190.5" y="68.58"/>
-<instance part="Q7" gate="1" x="228.6" y="68.58"/>
-<instance part="GND13" gate="1" x="193.04" y="58.42"/>
-<instance part="GND14" gate="1" x="231.14" y="58.42"/>
-<instance part="K1" gate="1" x="193.04" y="91.44"/>
-<instance part="K1" gate="2" x="213.36" y="96.52"/>
-<instance part="D3" gate="G$1" x="182.88" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="180.34" y="90.9574" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="185.1914" y="93.98" size="1.778" layer="96" rot="R90"/>
+<instance part="Q7" gate="1" x="190.5" y="53.34"/>
+<instance part="GND14" gate="1" x="193.04" y="40.64"/>
+<instance part="K1" gate="1" x="193.04" y="101.6"/>
+<instance part="K1" gate="2" x="213.36" y="106.68"/>
+<instance part="D3" gate="G$1" x="182.88" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="180.34" y="103.6574" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="180.34" y="101.3714" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+10" gate="1" x="193.04" y="106.68" smashed="yes">
-<attribute name="VALUE" x="190.5" y="109.22" size="1.778" layer="96"/>
+<instance part="P+10" gate="1" x="193.04" y="116.84" smashed="yes">
+<attribute name="VALUE" x="190.5" y="119.38" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14425,13 +14433,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="132.08" y1="119.38" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="132.08" y="121.92" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="BMS_RESET_2" class="0">
-<segment>
-<pinref part="IMD_BMS_LATCH" gate="-3" pin="S"/>
-<wire x1="33.02" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
-<label x="55.88" y="147.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GLV-" class="0">
@@ -14551,14 +14552,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="142.24" y1="25.4" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q6" gate="1" pin="S"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="193.04" y1="63.5" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="Q7" gate="1" pin="S"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="231.14" y1="63.5" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="48.26" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -14636,8 +14632,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="Q6" gate="1" pin="G"/>
-<wire x1="185.42" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
-<label x="180.34" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="185.42" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
+<label x="182.88" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BMS_FAIL" class="0">
@@ -14662,8 +14658,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="Q7" gate="1" pin="G"/>
-<wire x1="223.52" y1="68.58" x2="218.44" y2="68.58" width="0.1524" layer="91"/>
-<label x="218.44" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="185.42" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<label x="182.88" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IMD_BMS_LATCH+" class="0">
@@ -14674,10 +14670,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="K1" gate="2" pin="S"/>
-<wire x1="208.28" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="101.6" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
-<label x="223.52" y="106.68" size="1.778" layer="95" xref="yes"/>
+<wire x1="208.28" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="111.76" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
+<label x="223.52" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IMD_BMS_LATCH-" class="0">
@@ -14688,9 +14684,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="K1" gate="2" pin="P"/>
-<wire x1="213.36" y1="93.98" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="88.9" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
-<label x="223.52" y="88.9" size="1.778" layer="95" xref="yes"/>
+<wire x1="213.36" y1="104.14" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="99.06" x2="223.52" y2="99.06" width="0.1524" layer="91"/>
+<label x="223.52" y="99.06" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14825,33 +14821,40 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="116.84" y1="50.8" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 <label x="116.84" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IMD_BMS_LATCH" gate="-3" pin="S"/>
+<wire x1="33.02" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
+<label x="55.88" y="147.32" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="K1" gate="1" pin="2"/>
 <pinref part="Q6" gate="1" pin="D"/>
-<wire x1="193.04" y1="86.36" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="Q7" gate="1" pin="D"/>
-<wire x1="193.04" y1="83.82" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="81.28" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="73.66" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="81.28" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
-<junction x="193.04" y="81.28"/>
+<wire x1="193.04" y1="96.52" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="93.98" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="182.88" y1="88.9" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
-<junction x="193.04" y="83.82"/>
+<wire x1="182.88" y1="99.06" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="93.98" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
+<junction x="193.04" y="93.98"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="182.88" y1="93.98" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="99.06" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="104.14" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="1"/>
-<wire x1="193.04" y1="99.06" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="99.06" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="109.22" x2="193.04" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="109.22" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+12V"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="Q6" gate="1" pin="S"/>
+<pinref part="Q7" gate="1" pin="D"/>
+<wire x1="193.04" y1="63.5" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14859,4 +14862,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
