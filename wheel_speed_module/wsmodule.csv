@@ -1,0 +1,21 @@
+Part,Value,Device,Package,Description,SPICEMODEL,SPICEPREFIX,Conrad.de-Link
+C1,47u,CC1210,C1210,"CAPACITOR, European symbol",NONE,C,https://www.conrad.de/de/keramik-kondensator-smd-1210-47-f-16-v-10-murata-grm32er61c476ke15l-1-st-451184.html
+C1_CANH,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C1_CANL,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C1_GND,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C1_VCC,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C2_GND,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C2_SIG,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+C2_VCC,"WIREPAD1,6/0,8","WIREPAD1,6/0,8","1,6/0,8",Wire PAD connect wire on PCB,,,
+D1,BZX84CSMD,BZX84CSMD,TO236,Z DIODE,,,https://www.conrad.de/de/z-diode-bzx84c9v1-gehaeuseart-halbleiter-sot-23-3-fairchild-semiconductor-zener-spannung-91-v-leistung-max-ptot-35-1263122.html
+D2,,DIODE-GF1,GF1,DIODE,,,https://www.conrad.de/de/standarddiode-fairchild-semiconductor-gf1b-do-214ac-100-v-1-a-1264379.html
+F1,1206L,1206L,1206L,,,,https://www.conrad.de/de/smd-sicherung-smd-1206-1-a-63-v-flink-f-eska-431017-1-st-418976.html
+J1,J5MM,J5MM,5,Bridge,,,
+JP1,,PINHD-1X15,1X15,PIN HEADER,,,https://www.conrad.de/de/buchsenleiste-standard-anzahl-reihen-1-polzahl-je-reihe-36-fischer-elektronik-bl-1-36z-1-st-736765.html
+JP2,,PINHD-1X15,1X15,PIN HEADER,,,
+R1,60,RR1206,R1206,"RESISTOR, European symbol",NONE,R,https://www.conrad.de/de/dickschicht-widerstand-604-smd-1206-025-w-1-100-ppmc-panasonic-erj-8enf60r4v-1-st-1474888.html
+R2,60,RR1206,R1206,"RESISTOR, European symbol",NONE,R,
+R3,10K,RR1206,R1206,"RESISTOR, European symbol",NONE,R,https://www.conrad.de/de/dickschicht-widerstand-10-k-smd-1206-025-w-5-200-ppmc-panasonic-erj-8geyj103v-1-st-1465715.html
+R4,10K,RR1206,R1206,"RESISTOR, European symbol",NONE,R,
+T1,BC849,BC849,SOT23,NPN TRANSISTOR,,,https://www.conrad.de/de/transistor-bjt-diskret-nxp-semiconductors-bc849c215-sot-23-1-npn-1113130.html
+U1,LTC2875XS,LTC2875XS,SO-08,3.3V/5V CAN Transceiver,,,https://www.conrad.de/de/schnittstellen-ic-transceiver-texas-instruments-sn65hvd231qdrg4q1-can-11-soic-8-1187103.html
