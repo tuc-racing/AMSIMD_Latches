@@ -1,0 +1,42 @@
+Stückliste exportiert aus C:/Users/Sean/OneDrive/Documents/T.U.C-Racing/Git_V2/hardware/bspd/BSPD.sch am 04.03.2018 19:50
+
+Part    Value           Device               Package                     Description                                   LABEL       MF MPN OC_FARNELL OC_NEWARK TP_SIGNAL_NAME
+C3      100Uf           CPOL-EUD             PANASONIC_D                 POLARIZED CAPACITOR, European symbol                                                                
+C4      10n             C-EUC1210            C1210                       CAPACITOR, European symbol                                                                          
+C5      100nF           CPOL-EUC             PANASONIC_C                 POLARIZED CAPACITOR, European symbol                                                                
+C6      1u              C-EUC1210            C1210                       CAPACITOR, European symbol                                                                          
+D2                      DIODESOD-123         SOD-123                     Diode                                                                                               
+F1                      PTCFUSE-1206         R1206                       PTC fuses, resettable thermistors                                                                   
+IC1     LM339D          LM339D               SO14                        Low Power Low Offset Voltage Quad Comparators                                                       
+IC2     LM339D          LM339D               SO14                        Low Power Low Offset Voltage Quad Comparators                                                       
+IC3     7805DT          7805DT               TO252                       Positive VOLTAGE REGULATOR                                                                          
+K1      CMA51-S-DC12V-C CQ1-12V              CQ1                         AUTOMOTIVE QUIET RELAY NAiS                                      unknown    unknown                 
+POWER   M8-718-MALE     M8-718-MALE          M18-718-MALE                                                              POWER                                                 
+POWER1  M8-718-MALE     M8-718-MALE          M18-718-MALE                                                              BRAKE_FRONT                                           
+POWER2  M8-718-MALE     M8-718-MALE          M18-718-MALE                                                              BRAKE_REAR                                            
+POWER3  M8-718-MALE     M8-718-MALE          M18-718-MALE                                                              CURRENT                                               
+Q1                      INF-PG-TDSON-8-1_V_1 INF-PG-TDSON-8-1_V_1PRIMARY                                                                                                     
+Q3                      INF-PG-TDSON-8-1_V_1 INF-PG-TDSON-8-1_V_1PRIMARY                                                                                                     
+R1      2.2K            R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R2      2.2K            R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R3      50K             R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R4      2.2K            R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R5      2.2K            R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R6      2.2K            R-EU_R0805           R0805                       RESISTOR, European symbol                                                                           
+R7                      TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+R8                      TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STB_BF                  TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STB_BR                  TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STB_CUR                 TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STG_BF                  TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STG_BR                  TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+STG_CUR                 TRIM_EU-SM-42/43B    SM-42/43B                   POTENTIOMETER                                                                                       
+TP1     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STB_CUR       
+TP2     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STG_CUR       
+TP3     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STG_BR        
+TP4     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STB_BR        
+TP5     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STB_BF        
+TP6     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                              STG_BF        
+TP7     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                                            
+TP8     PTR1PAD1-13     PTR1PAD1-13          P1-13                       TEST PIN                                                                                            
+U$1     M8-718-MALE     M8-718-MALE          M18-718-MALE                                                              OUTPUT                                                
